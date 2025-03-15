@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramo de Flores Blancas</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            overflow: hidden;
+        }
+        .bouquet {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-end;
+        }
+        .flower-container {
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .flower {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            animation: sway 3s infinite alternate ease-in-out;
+        }
+        .petal {
+            position: absolute;
+            width: 50px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .petal:nth-child(1) { transform: rotate(0deg) translateY(-30px); }
+        .petal:nth-child(2) { transform: rotate(45deg) translateY(-30px); }
+        .petal:nth-child(3) { transform: rotate(90deg) translateY(-30px); }
+        .petal:nth-child(4) { transform: rotate(135deg) translateY(-30px); }
+        .petal:nth-child(5) { transform: rotate(180deg) translateY(-30px); }
+        .petal:nth-child(6) { transform: rotate(225deg) translateY(-30px); }
+        .petal:nth-child(7) { transform: rotate(270deg) translateY(-30px); }
+        .petal:nth-child(8) { transform: rotate(315deg) translateY(-30px); }
+        .center {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: yellow;
+            border-radius: 50%;
+            top: 30px;
+            left: 30px;
+        }
+        .stem {
+            position: absolute;
+            width: 10px;
+            height: 150px;
+            background: green;
+            left: 45px;
+            top: 100px;
+            animation: sway 3s infinite alternate ease-in-out;
+        }
+        @keyframes sway {
+            from { transform: rotate(-5deg) translateY(0); }
+            to { transform: rotate(5deg) translateY(-5px); }
+        }
+        body {background-color: black;}
+    </style>
+</head>
+<body>
+    <div class="bouquet">
+        <div class="flower-container">
+            <div class="flower">
+                <div class="center"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+            <div class="stem"></div>
+        </div>
+        <div class="flower-container">
+            <div class="flower">
+                <div class="center"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+            <div class="stem"></div>
+        </div>
+        <div class="flower-container">
+            <div class="flower">
+                <div class="center"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+            </div>
+            <div class="stem"></div>
+        </div>
+    </div>
+</body>
+</html>
